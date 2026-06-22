@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雷速体育 · 日常查询与对照指南</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f7f8fa;
+      color: #1f2a3f;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.75;
+      padding: 2rem 1.25rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page-wrapper {
+      max-width: 680px;
+      width: 100%;
+      background: #ffffff;
+      padding: 2.8rem 2.2rem;
+      border-radius: 28px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.03), 0 2px 8px rgba(0, 0, 0, 0.02);
+      transition: box-shadow 0.2s ease;
+    }
+
+    @media (max-width: 560px) {
+      .page-wrapper {
+        padding: 2rem 1.4rem;
+        border-radius: 20px;
+      }
+      body {
+        padding: 1.2rem 0.75rem;
+      }
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 560;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+      color: #0f1a2e;
+    }
+
+    .subhead {
+      font-size: 1rem;
+      color: #5d6b82;
+      margin-bottom: 2.2rem;
+      border-bottom: 1px solid #eef1f5;
+      padding-bottom: 1.2rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 520;
+      margin: 2.2rem 0 0.75rem 0;
+      color: #1a263b;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin-bottom: 1.1rem;
+      font-size: 0.98rem;
+      color: #2a374b;
+    }
+
+    .highlight {
+      background: #f2f5fa;
+      padding: 1.2rem 1.5rem;
+      border-radius: 18px;
+      margin: 1.6rem 0 1.8rem 0;
+      border-left: 4px solid #3b6ba5;
+    }
+
+    .highlight p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #2a5f8a;
+      text-decoration: none;
+      border-bottom: 1.5px solid transparent;
+      transition: border-color 0.15s, color 0.15s;
+      font-weight: 460;
+    }
+
+    a:hover {
+      border-bottom-color: #2a5f8a;
+      color: #163a5c;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.4rem 0 0.8rem 0;
+    }
+
+    .feature-item {
+      background: #f9faff;
+      padding: 1rem 1.2rem;
+      border-radius: 16px;
+      border: 1px solid #e9edf4;
+      transition: background 0.15s;
+    }
+
+    .feature-item:hover {
+      background: #f2f6fe;
+    }
+
+    .feature-item h3 {
+      font-size: 1rem;
+      font-weight: 510;
+      margin-bottom: 0.35rem;
+      color: #15273f;
+    }
+
+    .feature-item p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      color: #42526b;
+    }
+
+    @media (max-width: 500px) {
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .use-case {
+      background: #fafbfd;
+      border-radius: 20px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.8rem 0 1.2rem 0;
+    }
+
+    .use-case p {
+      margin-bottom: 0.6rem;
+    }
+
+    .use-case strong {
+      color: #1a2e4a;
+    }
+
+    .faq-mini {
+      margin-top: 2rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid #e4e9f0;
+    }
+
+    .faq-mini details {
+      margin-bottom: 0.7rem;
+      border-bottom: 1px solid #edf1f6;
+      padding-bottom: 0.6rem;
+    }
+
+    .faq-mini summary {
+      font-weight: 480;
+      cursor: pointer;
+      color: #1f304a;
+      padding: 0.2rem 0;
+      font-size: 0.98rem;
+    }
+
+    .faq-mini summary:hover {
+      color: #2a5f8a;
+    }
+
+    .faq-mini details p {
+      font-size: 0.9rem;
+      margin: 0.5rem 0 0.2rem 0.6rem;
+      color: #41516b;
+    }
+
+    .note {
+      margin-top: 2rem;
+      padding: 0.8rem 1.2rem;
+      background: #f0f3f9;
+      border-radius: 40px;
+      font-size: 0.88rem;
+      color: #3b4b66;
+      text-align: center;
+      letter-spacing: 0.01em;
+    }
+
+    .note a {
+      font-weight: 480;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e2e7ef;
+      margin: 1.8rem 0 1rem 0;
+    }
+
+    small {
+      display: block;
+      text-align: center;
+      font-size: 0.78rem;
+      color: #7b8a9e;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <h1>雷速体育</h1>
+    <div class="subhead">日常查询 · 对照阅读 · 延伸参考</div>
+
+    <p>
+      体育信息每天更新，比赛结果、赛事预告、球队数据……这些内容常常需要快速查找和对比。 
+      <a href="https://cn-lsty.com">雷速体育</a> 提供了一种相对集中的方式，让日常查询变得更顺手，
+      尤其是当你需要同时对照多个联赛或关注特定队伍时，信息的呈现节奏更接近浏览习惯。
+    </p>
+
+    <div class="highlight">
+      <p>
+        很多人打开 <a href="https://cn-lsty.com">雷速体育</a> 并不是为了某一场比赛，
+        而是想大致了解当天有哪些值得留意的对阵，或者看看某支球队近期的走势。
+        这种“扫一眼”的需求，恰好适合一个信息层级清晰的页面——不需要反复跳转，
+        就能在同一个视图里完成对照和判断。
+      </p>
+    </div>
+
+    <h2>突出特点</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <h3>多赛事同屏</h3>
+        <p>足球、篮球、网球等主流项目可并列展示，便于横向比较赛程与比分。</p>
+      </div>
+      <div class="feature-item">
+        <h3>实时数据流</h3>
+        <p>比分、统计、事件更新较为及时，适合关注进程的延伸阅读。</p>
+      </div>
+      <div class="feature-item">
+        <h3>联赛覆盖广</h3>
+        <p>从五大联赛到次级联赛，再到杯赛、亚洲赛事，选择空间较大。</p>
+      </div>
+      <div class="feature-item">
+        <h3>列表式呈现</h3>
+        <p>信息以列表和卡片为主，减少视觉干扰，查询效率更高。</p>
+      </div>
+    </div>
+
+    <h2>使用场景建议</h2>
+    <div class="use-case">
+      <p><strong>· 赛前预览：</strong> 晚上打开 <a href="https://cn-lsty.com">雷速体育</a>，
+      看看次日凌晨有哪些焦点战，提前安排观看计划。</p>
+      <p><strong>· 中场对照：</strong> 同时关注两三场比赛时，可以在页面内快速切换，
+      不用分别打开多个标签页。</p>
+      <p><strong>· 赛后复盘：</strong> 比赛结束后查看最终比分及关键数据，
+      配合其他分析文章做延伸理解。</p>
+      <p><strong>· 日常浏览：</strong> 没有特定目标时，浏览一下当天赛事列表，
+      发现感兴趣的对阵再深入了解。</p>
+    </div>
+
+    <h2>一点说明</h2>
+    <p>
+      任何体育数据平台都只是提供参考信息，实际比赛进程受多种因素影响。
+      <a href="https://cn-lsty.com">雷速体育</a> 力求数据准确，但建议用户
+      在重要判断（如投注、分析报告）前交叉核对官方或权威来源。
+      平台本身不保证实时数据百分之百无延迟，合理使用能带来更好的体验。
+    </p>
+
+    <div class="faq-mini">
+      <details>
+        <summary>数据更新快吗？有没有延迟？</summary>
+        <p>一般来说，主流比赛的数据更新在秒级到分钟级，视网络和赛事源而定。杯赛或低级别联赛可能略有延迟。</p>
+      </details>
+      <details>
+        <summary>需要注册才能浏览吗？</summary>
+        <p>基础浏览和查询功能无需注册，部分个性化设置或历史数据查询可能需要登录。</p>
+      </details>
+      <details>
+        <summary>手机端体验如何？</summary>
+        <p>页面针对移动端做了适配，列表和卡片在手机上阅读流畅，缩放和触控反馈自然。</p>
+      </details>
+    </div>
+
+    <hr>
+    <div class="note">
+      ⚡ 日常查询、对照阅读、延伸参考 —— 从 <a href="https://cn-lsty.com">雷速体育</a> 开始。
+    </div>
+    <small>产品说明页 · 内容仅供参考 · 数据以实际页面为准</small>
+  </div>
+</body>
+</html>
